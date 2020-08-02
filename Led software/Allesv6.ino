@@ -48,14 +48,14 @@ short arrayrot[200];
 short arrayblau[200];
 double GenauePosition[200];
 short Position[200];
-//wird für zwischenwerte benötigt
+//wird fÃ¼r zwischenwerte benÃ¶tigt
 short Bufferlocal[200];
 double Geschwindigkeit[200];
 int Tastenmodus = 0;
 int Wert = 0;
 //Laufzeit von Esp
 int Zeit = 0;
-//zeit, wann des nächste programm starten soll
+//zeit, wann des nÃ¤chste programm starten soll
 int Programmzeit = 1000;
 bool zweiterbuchstabe = false;
 int Zweiterbuchstabe = 0;
@@ -66,8 +66,7 @@ SerialEsp Daten = SerialEsp();
 void setup()
 {
 	Serial.begin(9600);
-
-  pixels.begin();
+	  pixels.begin();
 
 	Position[0] = 0;
 	Bufferlocal[0] = 0;
