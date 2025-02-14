@@ -7,12 +7,13 @@
 #include <WiFiAP.h>
 #include "SPIFFS.h"
 #include "time.h"
+#include "passwort.h"
 
 bool Accespointmodus = true; //Wenn true, dann startet der Esp sein eigenes Netzwerk
 const char* ssidAP = "Fast & Furious"; //Name von Accespoint
 const char* passwordAP = "987654321A";  // Passwort für den Accespoint
-const char* ssid = "--"; //Heimnetzwerk
-const char* password = "--";
+const char* ssid = WLAN_SSID; //Heimnetzwerk
+const char* password = WLAN_PASSWORT;
 WiFiServer server(80);
 const char* ntpServer = "pool.ntp.org"; //Internetadresse woher die Internetzeit ermittelt wird
 String IPAdresse = ""; //Wird gesetzt, wenn man mit dem Heimnetzwerk verbunden ist
